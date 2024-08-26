@@ -1007,10 +1007,10 @@
   dependencies:
     es-module-lexer "^0.9.3"
 
-"@endo/base64@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@endo/base64/-/base64-1.0.5.tgz#821a5107d1efc988cc630ba92aa31dab9fecfc45"
-  integrity sha512-onumize4hsF15ah85C6xPCI3LzvC9NOjf8QUuIhnAKLVR5bnQqhCAjKyt1EUMcsEGcDgJsq5DZFQrbU/tjWJAg==
+"@endo/base64@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@endo/base64/-/base64-1.0.6.tgz#7bd493cc1f9a33054841a1a5f15042eb680b6ba2"
+  integrity sha512-ScqHzFGY5Lp35rw9jlI+c4ZV+bT4ZhWc04sD0hUxcg0fdUZfVIswXNR1Iw2Q+mxdEhWjgzneVg5r037UZZ1hIg==
 
 "@endo/common@^1.2.2":
   version "1.2.2"
@@ -1026,6 +1026,11 @@
   resolved "https://registry.yarnpkg.com/@endo/env-options/-/env-options-1.1.4.tgz#b40ce43a6b9fd9659ffe7b6533dd2cd277628bb1"
   integrity sha512-hBwS+uijkN+KDFcEM4FRMvkCeusqm/drC2WuUXZA2aqjzaWgNjneIks3m5VcFmGvEZSpjDmGtGydAS31vdk7Mw==
 
+"@endo/env-options@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@endo/env-options/-/env-options-1.1.5.tgz#2314da7e125c04516e13ef6005ec09406e82c256"
+  integrity sha512-Pkov8WqmOIdwgREtntxSoYgRdRXqHE9N/ZMIPjSI6LV9p7c2bC9wc4pPZPjGPIb/O4phOikbvC6BcENE83T30Q==
+
 "@endo/errors@^1.2.2":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@endo/errors/-/errors-1.2.2.tgz#34d0f721df09c79744cd2cf89dddd3511bba64fa"
@@ -1040,22 +1045,29 @@
   dependencies:
     "@endo/env-options" "^1.1.4"
 
-"@endo/init@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@endo/init/-/init-1.1.2.tgz#7ce21a9823c95ebf5c42d1952f138f0d9b140f48"
-  integrity sha512-PW853bLeNOdsL3e/YrwTUIu3IG+bbnkaozjbIjGtQAd6UvCjNK9LxEAXsubzWWrPLz2XNXrHxrTHlYN1opxggQ==
+"@endo/eventual-send@^1.2.3":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@endo/eventual-send/-/eventual-send-1.2.4.tgz#2ba90fb6682857ab1cf8039df6aac1b073ac2514"
+  integrity sha512-HFqFHAkPtPxIkvTzlsZeslsDLAs4ISNVv4cgwhzfPhERn/bO+oTJ1NjpaOtlNk7CklxO30Pra+jw1sJ4Vjy3iQ==
   dependencies:
-    "@endo/base64" "^1.0.5"
-    "@endo/eventual-send" "^1.2.2"
-    "@endo/lockdown" "^1.0.7"
-    "@endo/promise-kit" "^1.1.2"
+    "@endo/env-options" "^1.1.5"
 
-"@endo/lockdown@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@endo/lockdown/-/lockdown-1.0.7.tgz#2dfea315d225bd1ac14c34cc4cf86dac4ab63d6e"
-  integrity sha512-MGnCxgJJvzQIa7oRoHXQ6mzaEPfFyYdg5bKnm3ZAaFf2nDmbqCoi+xyy8fBIAvZyqUbRgdd7jAveuLROTKd/aA==
+"@endo/init@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@endo/init/-/init-1.1.3.tgz#fcbf4315a45d9ab03f1b34f12efea3cae54d258c"
+  integrity sha512-YDw5dE6MnJbbvLnJaABB8jgjpDgMQfp0ODNGbHp/yHeJt837Qbq3UQanDPNnKCozNbTLd294ZRsV+RBOePuiwg==
   dependencies:
-    ses "^1.5.0"
+    "@endo/base64" "^1.0.6"
+    "@endo/eventual-send" "^1.2.3"
+    "@endo/lockdown" "^1.0.8"
+    "@endo/promise-kit" "^1.1.3"
+
+"@endo/lockdown@^1.0.8":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@endo/lockdown/-/lockdown-1.0.9.tgz#389344c2b2cbd199ad55a026965390a3e4023df8"
+  integrity sha512-9i7AETudP+NWPQ1h93PMs2jBZmu8g94f4Y60gn00/HITdTpvk/GlSXliOpFHy/SLl5JWJyjhWyXEmzVfDeJGAw==
+  dependencies:
+    ses "^1.7.0"
 
 "@endo/marshal@^1.5.0":
   version "1.5.0"
@@ -1091,6 +1103,13 @@
   integrity sha512-FPcwVyZYKhFqmPkTYPyVVleqB8mLBfAwhjiNIYEA4x+Qa66y+zVAXd1Muiwr0d8YU+afcB3+tg8mMsPXbZJwQg==
   dependencies:
     ses "^1.5.0"
+
+"@endo/promise-kit@^1.1.3":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@endo/promise-kit/-/promise-kit-1.1.4.tgz#1092be0b9c56861c9795475c01a7dc2f3146d6f8"
+  integrity sha512-oHaAz/AY7VISd51Nb7AeHN+2yNlFR58W6m3EIWMz8A7T9NALsCUNzlSQwF9k9u/7lH4ljwR0x1saLq4Q5jnGgQ==
+  dependencies:
+    ses "^1.7.0"
 
 "@esbuild/aix-ppc64@0.19.12":
   version "0.19.12"
@@ -4998,6 +5017,13 @@ ses@^1.5.0:
   dependencies:
     "@endo/env-options" "^1.1.4"
 
+ses@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/ses/-/ses-1.7.0.tgz#3b74db6104870d598da3b072f85e2d7a58e40fdc"
+  integrity sha512-hgoFhIT4/axmORurcIeSx/j0ZY62X4qAUuuiA0di4DZLLKjN5TKIRI5Is/nqcfxAKBw5VOa3kMX4aYanbqkaCA==
+  dependencies:
+    "@endo/env-options" "^1.1.5"
+
 set-function-length@^1.2.1:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/set-function-length/-/set-function-length-1.2.2.tgz#aac72314198eaed975cf77b2c3b6b880695e5449"
@@ -5133,8 +5159,16 @@ string-argv@~0.3.2:
   resolved "https://registry.yarnpkg.com/string-argv/-/string-argv-0.3.2.tgz#2b6d0ef24b656274d957d54e0a4bbf6153dc02b6"
   integrity sha512-aqD2Q0144Z+/RqG52NeHEkZauTAUWJO8c6yTftGJKO3Tja5tUgIfmIl6kExvhtxSDP7fXB6DvzkfMpCd/F3G+Q==
 
-"string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
-  name string-width-cjs
+"string-width-cjs@npm:string-width@^4.2.0":
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
+  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
+  dependencies:
+    emoji-regex "^8.0.0"
+    is-fullwidth-code-point "^3.0.0"
+    strip-ansi "^6.0.1"
+
+string-width@^4.1.0:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -5216,7 +5250,14 @@ stringify-object@^3.3.0:
     is-obj "^1.0.1"
     is-regexp "^1.0.0"
 
-"strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@6.0.1, strip-ansi@^6.0.0, strip-ansi@^6.0.1, strip-ansi@^7.0.1, strip-ansi@^7.1.0:
+"strip-ansi-cjs@npm:strip-ansi@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
+  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
+  dependencies:
+    ansi-regex "^5.0.1"
+
+strip-ansi@6.0.1, strip-ansi@^6.0.0, strip-ansi@^6.0.1, strip-ansi@^7.0.1, strip-ansi@^7.1.0:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
