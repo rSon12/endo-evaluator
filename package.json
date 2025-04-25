@@ -16,11 +16,11 @@
     "dev": "node -r ./o.cjs"
   },
   "dependencies": {
-    "@endo/init": "^1.1.2",
-    "@endo/marshal": "^1.5.0",
+    "@endo/init": "^1.1.9",
+    "@endo/marshal": "^1.6.4",
     "@open-wc/dev-server-hmr": "^0.2.0",
     "lit": "^3.1.4",
-    "ses": "^1.5.0"
+    "ses": "^1.12.0"
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "^0.10.3",
